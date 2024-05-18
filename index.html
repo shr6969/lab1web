@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab1 Helpful website</title>
+    <link rel="stylesheet" href="css/global_styles.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/task_block.css">
+    <link rel="stylesheet" href="css/calculator.css">
+    <link rel="stylesheet" href="css/result.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Author" id="authorLogo" onmouseover="showAuthorInfo()" onmouseout="hideAuthorInfo()">
+            <div id="authorInfo" class="author-info">
+                <p>Hi! I'm Sonya</p>
+            </div>
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#task1">Task 1</a></li>
+                <li><a href="#task2">Task 2</a></li>
+                <li><a href="#task3">Task 3</a></li>
+                <li><a href="#task4">Task 4</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="task1" class="task">
+            <h2>Task 1: Random Password Generator</h2>
+                <div>
+                    <label for="passwordLength">Password Length:</label>
+                    <input type="number" id="passwordLength" min="5">
+                    <button id="generatePasswordBtn">Generate Password</button>
+                </div>
+                <div id="passwordResult"></div>
+        </section>
+
+        <section id="task2" class="task">
+            <h2>Task 2: Word Count</h2>
+            <div>
+                <label for="wordCountInput">Enter Text:</label><br>
+                <textarea id="wordCountInput"></textarea><br>
+                <button id="countWordsBtn">Count Words</button>
+            </div>
+            <div id="wordCountResult"></div>
+        </section>
+
+        <section id="task3" class="task">
+            <h2>Task 3: Array sorting</h2>
+            <div>
+                <label for="arrayInput">Enter Numbers (comma-separated):</label><br>
+                <input type="text" id="arrayInput"><br>
+                <button id="sortAscendingBtn" onclick="sortArrayAscending()">Sort Ascending</button>
+                <button id="sortDescendingBtn" onclick="sortArrayDescending()">Sort Descending</button><br>
+
+            </div>
+            <div id="sortingResult"></div>
+        </section>
+
+        <section id="task4" class="task">
+                <h2>Task 4: Simple Calculator</h2>
+                <div class="calculator">
+                    <input id="display" readonly>
+                    <div id="keys">
+                        <button onclick="appendToDisplay('+')" class="operator-btn">+</button>
+                        <button onclick="appendToDisplay('7')">7</button>
+                        <button onclick="appendToDisplay('8')">8</button>
+                        <button onclick="appendToDisplay('9')">9</button>
+                        <button onclick="appendToDisplay('-')" class="operator-btn">-</button>
+                        <button onclick="appendToDisplay('4')">4</button>
+                        <button onclick="appendToDisplay('5')">5</button>
+                        <button onclick="appendToDisplay('6')">6</button>
+                        <button onclick="appendToDisplay('*')" class="operator-btn">*</button>
+                        <button onclick="appendToDisplay('1')">1</button>
+                        <button onclick="appendToDisplay('2')">2</button>
+                        <button onclick="appendToDisplay('3')">3</button>
+                        <button onclick="appendToDisplay('/')" class="operator-btn">/</button>
+                        <button onclick="appendToDisplay('0')">0</button>
+                        <button onclick="appendToDisplay('.')">.</button>
+                        <button onclick="calculate()">=</button>
+                        <button onclick="clearDisplay()" class="operator-btn">C</button>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    <script src="js/autorinfo.js"></script>
+    <script src="js/password-gen.js"></script>
+    <script src="js/countwords.js"></script>
+    <script src="js/sort.js"></script>
+    <script src="js/calculator.js"></script>
+</body>
+<footer class="footer">
+    <h4>Follow me:</h4>
+    <div class="social-links">
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <ul>
+            <li><i class="fas fa-envelope"></i> Email:<a href="mailto:sofiahruba1129@gmail.com">sofiahruba1129@gmail.com</a></li>
+            <li><i class="fas fa-phone"></i> Phone number: +420-722-563-000</li>
+        </ul>
+        <p>&copy; 2024 Sofiia Hruba</p>
+    </div>
+</footer>
+</html>
