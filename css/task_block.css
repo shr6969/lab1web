@@ -1,0 +1,44 @@
+@import url('global_styles.css');
+
+.task {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+.task h2 {
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+  
+input[type="number"],
+input[type="text"],
+textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+  
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+button:hover {
+    background-color: #555;
+}
+  
+button:active {
+    background-color: #111;
+}
