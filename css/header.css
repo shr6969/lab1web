@@ -1,0 +1,39 @@
+@import url('global_styles.css');
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+  
+header img {
+    width: 150px;
+    height: 150px;
+    margin-left: 20px;
+}
+  
+.logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-left: 10px;
+    z-index: 999;
+  }
+  
+.author-info {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px; 
+    z-index: 999; 
+}
+  
+.logo:hover + .author-info {
+    display: block;
+}  
